@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Twitter Client</string>
+
+    <string name="name_hint">Name</string>
+    <string name="nickname_hint">Nickname</string>
+    <string name="description_hint">Description</string>
+    <string name="location_hint">Location</string>
+    <string name="followings_hint">Followings</string>
+    <string name="followers_hint">Followers</string>
+
+    <string name="search_query_hint">Enter user name</string>
+    <string name="search_hint">search</string>
+    <string name="not_enough_symbols_msg">Please enter at least one symbol</string>
+    <string name="loading_error_msg">Error during loading info</string>
 </resources>

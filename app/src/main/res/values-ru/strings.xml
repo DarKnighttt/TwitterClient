@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Twitter Client</string>
+
+    <string name="name_hint">Имя</string>
+    <string name="nickname_hint">Ник</string>
+    <string name="description_hint">Описание</string>
+    <string name="location_hint">Местоположение</string>
+    <string name="followings_hint">Читает</string>
+    <string name="followers_hint">Читатели</string>
+
+    <string name="search_query_hint">Введите имя</string>
+    <string name="search_hint">Поиск</string>
+    <string name="not_enough_symbols_msg">Введите хотя бы один символ</string>
+    <string name="loading_error_msg">Ошибка при загрузке данных</string>
+</resources>
