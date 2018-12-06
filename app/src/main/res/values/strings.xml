@@ -7,9 +7,17 @@
     <string name="location_hint">Location</string>
     <string name="followings_hint">Followings</string>
     <string name="followers_hint">Followers</string>
+    <string name="date_hint">Date</string>
+    <string name="content_hint">Content</string>
 
     <string name="search_query_hint">Enter user name</string>
     <string name="search_hint">search</string>
     <string name="not_enough_symbols_msg">Please enter at least one symbol</string>
     <string name="loading_error_msg">Error during loading info</string>
+
+
+    <string name="fa_map_marker">\uf041</string>
+    <string name="fa_retweet">\uf079</string>
+    <string name="fa_heart_o">\uf08a</string>
+
 </resources>
