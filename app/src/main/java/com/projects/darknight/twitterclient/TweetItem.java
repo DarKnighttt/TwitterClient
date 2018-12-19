@@ -1,6 +1,5 @@
 package com.projects.darknight.twitterclient;
 
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -17,8 +16,8 @@ public class TweetItem extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tweet_item);
 
-        userImage = findViewById(R.id.userImage);
-        contentImage = findViewById(R.id.contentImage);
+        userImage = findViewById(R.id.tweet_user_image);
+        contentImage = findViewById(R.id.tweet_image);
 
         Picasso.get().load("https://ae01.alicdn.com/kf/HTB1kDP6KVXXXXbuXFXXq6xXFXXXN/Batman-DC.jpg_640x640.jpg")
                 .transform(new PicassoCircleTransformation())

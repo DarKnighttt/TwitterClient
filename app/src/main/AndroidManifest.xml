@@ -18,9 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserInfoActivity" />
+        <activity android:name=".activity.UserInfoActivity" />
         <activity android:name=".TweetItem" />
-        <activity android:name=".UserItemView"></activity>
+        <activity android:name=".UserItemView" />
+        <activity android:name=".activity.SearchUsersActivity"></activity>
     </application>
 
 </manifest>

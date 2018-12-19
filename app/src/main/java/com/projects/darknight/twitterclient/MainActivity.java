@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.projects.darknight.twitterclient.activity.SearchUsersActivity;
+import com.projects.darknight.twitterclient.activity.UserInfoActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -25,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), TweetItem.class));
+            }
+        });
+
+        Button btnUserSearch = findViewById(R.id.btnUserSearch);
+        btnUserSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), SearchUsersActivity.class));
             }
         });
     }

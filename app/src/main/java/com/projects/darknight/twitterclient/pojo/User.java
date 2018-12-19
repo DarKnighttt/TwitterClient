@@ -2,7 +2,7 @@ package com.projects.darknight.twitterclient.pojo;
 
 public class User {
 
-    private int id;
+    private Long id;
     private String imgUrl;
     private String name;
     private String nickName;
@@ -11,7 +11,7 @@ public class User {
     private int followingCount;
     private int followersCount;
 
-    public User(int id, String imgUrl, String name, String nickName, String description, String location, int followingCount, int followersCount) {
+    public User(Long id, String imgUrl, String name, String nickName, String description, String location, int followingCount, int followersCount) {
         this.id = id;
         this.imgUrl = imgUrl;
         this.name = name;
@@ -22,7 +22,7 @@ public class User {
         this.followersCount = followersCount;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
@@ -61,9 +61,9 @@ public class User {
 
         User user = (User) o;
 
-        if (id != user.id) return false;
         if (followingCount != user.followingCount) return false;
         if (followersCount != user.followersCount) return false;
+        if (id != null ? !id.equals(user.id) : user.id != null) return false;
         if (imgUrl != null ? !imgUrl.equals(user.imgUrl) : user.imgUrl != null) return false;
         if (!name.equals(user.name)) return false;
         if (!nickName.equals(user.nickName)) return false;
@@ -74,7 +74,7 @@ public class User {
 
     @Override
     public int hashCode() {
-        int result = id;
+        int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (imgUrl != null ? imgUrl.hashCode() : 0);
         result = 31 * result + name.hashCode();
         result = 31 * result + nickName.hashCode();

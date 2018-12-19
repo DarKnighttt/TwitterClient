@@ -7,7 +7,7 @@
     tools:context=".TweetItem">
 
     <ImageView
-        android:id="@+id/userImage"
+        android:id="@+id/tweet_user_image"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -23,11 +23,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:orientation="horizontal"
-        app:layout_constraintStart_toEndOf="@+id/userImage"
+        app:layout_constraintStart_toEndOf="@+id/tweet_user_image"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tweet_user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -35,26 +35,26 @@
             android:textAppearance="@style/Text.Primary.Bold" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tweet_user_nick_name"
+            style="@style/TextView.Secondary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
-            android:text="@string/nickname_hint"
-            style="@style/TextView.Secondary"/>
+            android:text="@string/nickname_hint" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tweet_creation_date"
+            style="@style/TextView.Secondary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/date_hint"
-            style="@style/TextView.Secondary"/>
+            android:text="@string/date_hint" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tweet_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -63,19 +63,19 @@
         android:text="@string/content_hint"
         android:textColor="@android:color/background_dark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/userImage"
+        app:layout_constraintStart_toEndOf="@+id/tweet_user_image"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <ImageView
-        android:id="@+id/contentImage"
+        android:id="@+id/tweet_image"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/userImage"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/tweet_user_image"
+        app:layout_constraintTop_toBottomOf="@+id/tweet_text"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <LinearLayout
@@ -87,18 +87,18 @@
         android:paddingTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/userImage"
-        app:layout_constraintTop_toBottomOf="@+id/contentImage">
+        app:layout_constraintStart_toEndOf="@+id/tweet_user_image"
+        app:layout_constraintTop_toBottomOf="@+id/tweet_image">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tweet_retweet"
             style="@style/TextIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fa_retweet" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/tweet_retweet_count"
             style="@style/TextView.Secondary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -107,14 +107,14 @@
             android:text="5" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/tweet_like"
             style="@style/TextIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fa_heart_o" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/tweet_like_count"
             style="@style/TextView.Secondary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
